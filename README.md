@@ -74,6 +74,12 @@ Clojure:
 
 - Installing [Java SDK](https://sdkman.io/), VS Code [Calva](https://calva.io/get-started-with-clojure/) and connecting Clojure to its famous power REPL went smoothly. Leiningen vs deps.edn are both fine, but all this feels... complecting. 
 
+Starlark-Go:
+
+- ChatGPT has missed that the global scope variables in Starlark are immutable. Self-corrected after prompting it.
+
+- [Starlark-Go](https://github.com/google/starlark-go) is what Python should have been, a modern SETL derivative with no nonsense. However, it has no batteries... It is also incredible that such a small language without a build system and package manager still gets several hundred github issues. Coding is tricky...
+
 F#:
 
 - `Program.fs`: Errored on a list which had to be `ResizeArray`. Self-corrected after a single feedback.
