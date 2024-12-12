@@ -30,7 +30,7 @@ graph.printGraph();
 
 ### TypeScript, Python3, Go, Rust
 
-No surprises. ChatGPT writes correct human readable code. 
+ChatGPT writes correct, human-readable code. 
 
 Js/Es6 with JSDoc are not as good as TypeScript. We only get `*` (Any), `Object`, and `Object[]` in JSDoc.
 
@@ -40,7 +40,7 @@ TypeScript >=v2/0 allows to make everything non-nullable by default with the typ
 this.nodes.get(from)!.add(to);
 ```
 
-If asked specifically about the safety here, it does suggest rewriting to either this:
+If asked specifically about the type safety here, it does suggest rewriting to either this:
 
 ```
 if (this.nodes.has(from)) {
@@ -60,7 +60,7 @@ this.nodes.set(from, targetSet);
 
 It starts to care about safety only after you ask it. Null-safety may exist in the language, but it is not guaranteed to appear in the code. Python3 and Go are even worse safety-wise.
 
-I am surprised ChatGPT groks pointers and the borrow checker. These are so fragile syntactically. There must be a lot of Go and Rust codes out there, on par with Js/Python.
+Note that ChatGPT groks pointers and the borrow checker despite that these are so fragile syntactically. There must be a lot of Go and Rust codes out there to learn from.
 
 ### Clojure, Starlark-Go, F#
 
@@ -72,7 +72,7 @@ Clojure:
 
 - Ironically, ChatGPT has missed one obvious parenthesis, so this is fragile. 
 
-- Installing [Java SDK](https://sdkman.io/), VS Code [Calva](https://calva.io/get-started-with-clojure/) and connecting Clojure to its famous power REPL went smoothly. Leiningen vs deps.edn are both fine, but all this feels... complecting? 
+- Installing [Java SDK](https://sdkman.io/), VS Code [Calva](https://calva.io/get-started-with-clojure/) and connecting Clojure to its famous power REPL went smoothly. Leiningen vs deps.edn are both fine, but all this feels... complecting. 
 
 F#:
 
@@ -86,6 +86,6 @@ F#:
 
 ChatGPT fails here. It totally hallucinates, does not even warn a user that these languages have changed since the last time ChatGPT saw them. It does not browse and self-update, in my experience.
 
-I could mention here also Borgo and Inko (both written in Rust), as well as Grain (written in Reason), but I fear the results would be similar. However, the idea behind these languages is very clear and makes a lot of sense: Remove Rust's compile time complexity, keep only the good bits. To be revisited.
+One could mention here [Borgo](https://github.com/borgo-lang/borgo) and [Inko](https://github.com/inko-lang/inko) (both written in Rust), as well as [Grain](https://github.com/grain-lang/grain) (written in Reason), but I fear the results would be similar. However, the idea behind these languages is very clear and makes a lot of sense: Remove Rust's compile time complexity, keep only the good bits. To be revisited.
 
  
